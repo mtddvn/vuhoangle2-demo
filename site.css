@@ -103,6 +103,7 @@ body{line-height:1.55}
 .hd-nav::before{content:"";position:absolute;left:0;top:0;bottom:0;width:150px;background:var(--red);clip-path:polygon(0 0,100% 0,calc(100% - 27px) 100%,0 100%)}
 .hd-nav .wrap{position:relative;display:flex;align-items:center;justify-content:space-between;height:48px}
 .hot-tab,.nav-d,.hd-nav .addr{display:none}
+.hot-tab,.nav-d a,.hd-nav .addr{color:#fff}
 .nav-m{display:block;color:#fff}
 .hot-m{display:flex;align-items:center;gap:10px;min-height:48px;color:#fff;font-weight:700;font-size:16px}
 .hot-m svg{width:22px;height:22px;flex:none}
