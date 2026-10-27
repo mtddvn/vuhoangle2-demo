@@ -160,6 +160,7 @@ body{line-height:1.55}
   .hero{height:auto}
   .hero-in{height:auto;display:flex;flex-direction:column;padding:28px 20px 28px}
   .hero .copy{position:static;width:auto}
+  .hero .copy .cta{align-self:stretch}
   .hero .copy h1{font-size:clamp(28px,7.6vw,38px)}
   .scene{position:relative;inset:auto;width:min(480px,100%);margin:20px auto 0;align-self:center;display:flex;flex-direction:column;align-items:center}
   .hero .bike{position:relative;right:auto;bottom:auto;width:100%;margin-top:34px}
@@ -521,15 +522,18 @@ textarea.inp{min-height:96px;resize:vertical}
 .hero-vario .desc{margin-top:10px;font-size:16px;line-height:1.6;color:var(--ink-2);max-width:440px}
 .hero-media{position:absolute;right:5%;bottom:10px;width:min(540px,42%);z-index:1}
 .hero-vario .stage{position:relative;aspect-ratio:1000/640;background:none;border-radius:0;overflow:visible}
-.hero-vario .shot{filter:drop-shadow(0 14px 14px rgba(0,0,0,.18))}
+.hero-vario .shot{-webkit-mask-image:linear-gradient(#000 0,#000 92%,transparent 96%);mask-image:linear-gradient(#000 0,#000 92%,transparent 96%)}
 .hero-vario .shot-ph{inset:12px;border-color:var(--ink-2)}
 .hero-vario .shot-ph svg,.hero-vario .shot-ph span{color:var(--ink-2)}
-.hero-vario .cap{margin-top:0;justify-content:center;align-items:baseline;gap:10px}
-.hero-vario .cap small{color:var(--ink-2)}
-.hero-vario .picker{margin-top:0;display:flex;flex-wrap:wrap;justify-content:center;gap:0 28px}
-.hero-vario .picker legend{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
-.hero-vario .ver+.ver{margin-top:0}
-.hero-vario .ver h3{margin:0;font-size:12px;line-height:1.3;text-align:center;color:var(--ink-2)}
+.hero-vario .cap{margin-top:4px;justify-content:center;align-items:baseline;gap:0;flex-wrap:wrap}
+.hero-vario .cap b{font-size:18px;line-height:1.35;font-weight:700;color:var(--ink)}
+.hero-vario .cap small{font-size:14px;line-height:1.35;font-weight:400;color:var(--ink-2)}
+.hero-vario .picker{margin-top:2px;display:flex;flex-wrap:nowrap;justify-content:center;gap:0}
+.hero-vario .picker legend,.hero-vario .ver h3{position:absolute;width:1px;height:1px;margin:-1px;padding:0;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.hero-vario .ver{display:flex;align-items:center}
+.hero-vario .ver h3{color:var(--ink-2)}
+.hero-vario .ver+.ver{position:relative;margin:0 0 0 28px}
+.hero-vario .ver+.ver::before{content:"";position:absolute;left:-14px;top:11px;width:1px;height:22px;background:rgba(51,56,61,.5)}
 .hero-vario .sws{gap:0;justify-content:center}
 .hero-vario .sw{display:grid;place-items:center;width:44px;height:44px;min-height:0;padding:0;border:0;border-radius:50%;background:none;box-shadow:none}
 .hero-vario .sw:hover{border-color:transparent}
@@ -544,6 +548,7 @@ textarea.inp{min-height:96px;resize:vertical}
 .buy .pricebox b{font-size:28px}
 .buy-r .acts{margin-top:0}
 .buy-r .acts-note{margin-top:8px}
+@media (min-width:641px) and (max-width:1179px){.stat b span{display:inline;margin:0 0 0 4px;font-size:18px;white-space:nowrap}}
 @media (min-width:1024px) and (max-width:1299px){.hero-vario .hero-media{width:min(540px,48%)}}
 @media (max-width:1023px){
   .hero-vario{height:auto}
