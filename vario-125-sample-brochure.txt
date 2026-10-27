@@ -19,8 +19,8 @@ KHUNG GẦM
   Phuộc sau: Lò xo trụ đơn, giảm chấn thủy lực
 
 ĐỘNG CƠ
-  Loại động cơ: 4 kỳ, 1 xi lanh, làm mát bằng chất lỏng
-  Dung tích xy-lanh: 125 cm3
+  Loại động cơ: 4 kỳ, 1 xi-lanh, làm mát bằng chất lỏng
+  Dung tích xi-lanh: 125 cm3
   Mô-men cực đại: 11,9 Nm / 5000 vòng/phút
   Đường kính x Hành trình pít tông: 52,400 x 57,907 mm
   Tỷ số nén: 11,0 : 1
